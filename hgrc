@@ -1,0 +1,13 @@
+[ui]
+username = Andrzej Cichocki <andrzej.cichocki@gmail.com>
+
+[extensions]
+color = 
+progress = 
+
+[hooks]
+commit = hgcommit.py
+
+[alias]
+revertt = revert --no-backup
+clean = revertt --all
