@@ -10,3 +10,5 @@ alias cp='cp -i'
 
 alias hg='hg --color always'
 alias less='less -FR'
+
+. git_completion
