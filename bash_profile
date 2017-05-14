@@ -1,6 +1,6 @@
 . $HOME/.profile
 
-PATH="$HOME/projects/bin:$HOME/projects/pyven:$HOME/projects/minimake:$PATH"
+PATH="$HOME/projects/sbin:$HOME/projects/bin:$HOME/projects/pyven:$HOME/projects/minimake:$PATH"
 export JAVA_HOME=$HOME/opt/jdk1.8
 export MINICONDA_HOME=$HOME/opt/miniconda
 export MINICONDA3_HOME=$HOME/opt/miniconda3
