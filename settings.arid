@@ -1,4 +1,4 @@
-tidal.samplesPath = $get(~)/projects/Music/samples/Dirt-Samples
+tidal.samplesPath = $get(~)/Music/samples/Dirt-Samples
 tidal.channels 8 tidal.port = 57121
 tidalstudio.synths pym2149 executable = $get(~)/projects/pym2149/tidal2jack.py
 tidalstudio.synths pym2149 tidalstudio.synthEnv PYM2149_CONFIG = tidal
