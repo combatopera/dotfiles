@@ -10,3 +10,7 @@ export STEPWISE_ECLIPSE_WORKSPACE=$HOME/workspace
 #export http_proxy=http://localhost:3128/
 #export https_proxy=http://localhost:3128/
 #export ftp_proxy=http://localhost:3128/
+
+[[ $(($(date +%s) - $(stat -c %Y ~/var/last-upgrade))) -ge $((60*60*24*7)) ]] && {
+    figlet "It's time for an upgrade." >&2
+}
