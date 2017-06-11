@@ -5,5 +5,5 @@ tidalstudio
         executable = $/($(~) projects pym2149 tidal2jack.py)
         tidalstudio.synthEnv PYM2149_CONFIG = tidal
         tidalstudio.synthLabel = pym2149
-tidalstudio.sendKey = \
+    sendKey = \
 source $(~)$(/).settings-private.arid
