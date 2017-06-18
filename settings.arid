@@ -3,7 +3,7 @@ tidal.channels 8 tidal.port = 57121
 tidalstudio
     synths pym2149
         executable = $/($(~) projects pym2149 tidal2jack.py)
-        tidalstudio.synthEnv PYM2149_CONFIG = tidal
+        env PYM2149_CONFIG = tidal
         windowName = pym2149
     sendKey = \
 source $(~)$(/).settings-private.arid
