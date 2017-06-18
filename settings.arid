@@ -4,6 +4,6 @@ tidalstudio
     synths pym2149
         executable = $/($(~) projects pym2149 tidal2jack.py)
         tidalstudio.synthEnv PYM2149_CONFIG = tidal
-        tidalstudio.synthLabel = pym2149
+        windowName = pym2149
     sendKey = \
 source $(~)$(/).settings-private.arid
