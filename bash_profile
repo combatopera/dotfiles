@@ -1,6 +1,11 @@
 . $HOME/.profile
 
-PATH="$HOME/projects/sbin:$HOME/projects/bin:$HOME/projects/pyven:$HOME/projects/minimake:$PATH"
+for p in ~/projects/*; do
+    [[ -e "$p/project.arid" ]] || continue
+    if [[ true = "$(~/projects/aridity/arid-config "$p/project.arid" executable 2>/dev/null)" ]]; then
+        PATH="$p:$PATH"
+    fi
+done
 export JAVA_HOME=$HOME/opt/jdk1.8
 export MINICONDA_HOME=$HOME/opt/miniconda
 export MINICONDA3_HOME=$HOME/opt/miniconda3
