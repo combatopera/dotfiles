@@ -1,10 +1,8 @@
 . $HOME/.profile
 
-for p in ~/projects/*; do
-    [[ -e "$p/project.arid" ]] || continue
-    if [[ true = "$(~/projects/aridity/arid-config "$p/project.arid" executable 2>/dev/null)" ]]; then
-        PATH="$p:$PATH"
-    fi
+for p in $HOME/projects/*; do
+    [ -e "$p/project.arid" ] || continue
+    [ true = "$(~/projects/aridity/arid-config "$p/project.arid" executable 2>/dev/null)" ] && PATH="$p:$PATH"
 done
 export JAVA_HOME=$HOME/opt/jdk1.8
 export MINICONDA_HOME=$HOME/opt/miniconda
