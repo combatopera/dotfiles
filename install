@@ -5,7 +5,7 @@ set -e
 cd "$(dirname "$(readlink -f "$0")")"
 
 prefix=~/
-relpwd="${PWD:${#prefix}}"
+relpwd="${PWD#$prefix}"
 
 for f in *; do
 
