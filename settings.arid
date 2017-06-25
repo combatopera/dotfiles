@@ -1,7 +1,8 @@
 tidal.samplesPath = $/($(~) Music samples Dirt-Samples)
 tidal.channels
     8 tidal.port = 57121
-    9 tidal.port = 57122
+    9 tidal.port = $(Concern port)
+Concern port = 57122
 tidalstudio
     synths
         pym2149
