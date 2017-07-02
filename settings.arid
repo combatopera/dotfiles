@@ -1,7 +1,4 @@
 tidal.samplesPath = $/($(~) Music samples Dirt-Samples)
-tidal.channels
-    8 tidal.port = 57121
-    9 tidal.port = $(Concern port)
 Concern port = 57122
 tidalstudio
     synths
@@ -13,4 +10,7 @@ tidalstudio
             executable = $/($(~) projects Concern Concern)
             windowName = Concern
     sendKey = \
+    tidal channels
+        8 tidal.port = 57121
+        9 tidal.port = $(Concern port)
 source $(~)$(/).settings-private.arid
