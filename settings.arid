@@ -11,6 +11,6 @@ tidalstudio
             windowName = Concern
     sendKey = \
     tidal channels
-        8 tidal.port = 57121
-        9 tidal.port = $(Concern port)
+        8 port = 57121
+        9 port = $(Concern port)
 source $(~)$(/).settings-private.arid
