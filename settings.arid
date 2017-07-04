@@ -8,9 +8,9 @@ tidalstudio
         Concern
             executable = $/($(~) projects Concern Concern)
             windowName = Concern
+        sc samples . $/($(~) projects programs samples.arid)
     sendKey = \
     tidal
-        samplesPath = $/($(~) Music samples Dirt-Samples)
         channels
             8 port = 57121
             9 port = $(Concern port)
