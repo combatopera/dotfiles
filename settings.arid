@@ -8,7 +8,6 @@ tidalstudio
         Concern
             executable = $/($(~) projects Concern Concern)
             windowName = Concern
-        sc samples . $/($(~) projects programs samples.arid)
     sendKey = \
     tidal
         channels
