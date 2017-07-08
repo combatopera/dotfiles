@@ -3,7 +3,6 @@ tidalstudio
     synths
         pym2149
             executable = $/($(~) projects pym2149 tidal2jack.py)
-            env PYM2149_CONFIG = tidal
             windowName = pym2149
         Concern
             executable = $/($(~) projects Concern Concern)
