@@ -11,6 +11,14 @@ for f in *; do
 
     [[ install = "$f" ]] && continue
 
-    ln -Tsfv "$relpwd/$f" ~/".$f"
+    path=~/".$f"
+
+    [[ -e "$path" ]] && {
+        echo -n 'Skip: '
+        ls --color "$path"
+        continue
+    } >&2
+
+    ln -Tsfv "$relpwd/$f" "$path"
 
 done
