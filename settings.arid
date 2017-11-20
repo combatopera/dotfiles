@@ -1,9 +1,15 @@
-tidal.samplesPath = $/($(~) Music samples Dirt-Samples)
-tidal.channels 8 tidal.port = 57121
+Concern port = 57122
 tidalstudio
-    synths pym2149
-        executable = $/($(~) projects pym2149 tidal2jack.py)
-        env PYM2149_CONFIG = tidal
-        windowName = pym2149
+    synths
+        pym2149
+            executable = $/($(~) projects pym2149 tidal2jack.py)
+            windowName = pym2149
+        Concern
+            executable = $/($(~) projects Concern Concern)
+            windowName = Concern
     sendKey = \
-source $(~)$(/).settings-private.arid
+    tidal
+        channels
+            8 port = 57121
+            9 port = $(Concern port)
+. $(~)$(/).settings-private.arid

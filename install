@@ -5,12 +5,20 @@ set -e
 cd "$(dirname "$(readlink -f "$0")")"
 
 prefix=~/
-relpwd="${PWD:${#prefix}}"
+relpwd="${PWD#$prefix}"
 
 for f in *; do
 
     [[ install = "$f" ]] && continue
 
-    ln -Tsfv "$relpwd/$f" ~/".$f"
+    path=~/".$f"
+
+    [[ -e "$path" ]] && {
+        echo -n 'Skip: '
+        ls --color "$path"
+        continue
+    } >&2
+
+    ln -Tsfv "$relpwd/$f" "$path"
 
 done
