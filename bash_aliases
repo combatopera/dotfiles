@@ -11,4 +11,7 @@ alias cp='cp -i'
 alias hg='hg --color always'
 alias less='less -FR'
 
-. git_completion
+function whereami {
+    echo $(dirname $(readlink -f $BASH_SOURCE))
+}
+. $(whereami)/../r3-bin/git_completion
