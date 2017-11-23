@@ -12,6 +12,6 @@ alias hg='hg --color always'
 alias less='less -FR'
 
 function whereami {
-    echo $(dirname $(readlink -f $BASH_SOURCE))
+    echo "$(dirname "$(readlink -f "$BASH_SOURCE")")"
 }
-. $(whereami)/../r3-bin/git_completion
+. "$(whereami)/../r3-bin/git_completion"
