@@ -9,7 +9,7 @@ relpwd="${PWD#$prefix}"
 
 for f in *; do
 
-    [[ install = "$f" ]] && continue
+    [[ install = "$f" || project.arid = "$f" ]] && continue
 
     path=~/".$f"
 
