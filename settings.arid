@@ -12,4 +12,5 @@ tidalstudio
         channels
             8 port = 57121
             9 port = $(Concern port)
+samples path = $/($(~) Music samples)
 . $(~)$(/).settings-private.arid
