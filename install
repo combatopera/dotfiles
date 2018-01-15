@@ -7,9 +7,11 @@ cd "$(dirname "$(readlink -f "$0")")"
 prefix=~/
 relpwd="${PWD#$prefix}"
 
-for f in *; do
+find -type f | while read f; do
 
-    [[ install = "$f" || project.arid = "$f" ]] && continue
+    f="${f:2}"
+
+    [[ "$f" = .* || install = "$f" || project.arid = "$f" ]] && continue
 
     path=~/".$f"
 
@@ -19,6 +21,8 @@ for f in *; do
         continue
     } >&2
 
-    ln -Tsfv "$relpwd/$f" "$path"
+    esc="$(echo "$f" | tr -cd / | sed s:/:../:g)"
+
+    ln -Tsfv "$esc$relpwd/$f" "$path"
 
 done
