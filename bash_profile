@@ -2,9 +2,10 @@
 
 for p in $HOME/projects/*; do echo -n -; done >&2
 /bin/echo -en '\r' >&2
-PATH="$(PYTHONPATH=~/projects/aridity python3 -c 'import sys, os, aridity
+PATH="$(PYTHONPATH=~/projects/aridity python3 -c 'import sys, os, aridity, termcolor
 def g():
     for project in sys.argv[1:]:
+        color = attrs = None
         path = os.path.join(project, "project.arid")
         if os.path.exists(path):
             context = aridity.Context()
@@ -13,7 +14,9 @@ def g():
                 repl.printf(". %s", path)
             if context.resolved("executable").value:
                 yield project
-        print("+", end = "", file = sys.stderr)
+                color = "green"
+                attrs = ["bold"]
+        termcolor.cprint("+", end = "", file = sys.stderr, color = color, attrs = attrs)
 print(os.pathsep.join(g()))' $HOME/projects/*):$PATH"
 echo >&2
 
