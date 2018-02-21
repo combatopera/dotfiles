@@ -1,14 +1,21 @@
 . $HOME/.profile
 
-for p in $HOME/projects/*; do echo -n -; done
-/bin/echo -en '\r'
-for p in $HOME/projects/*; do
-    [ -e "$p/project.arid" ] && {
-        [ true = "$(~/projects/aridity/arid-config "$p/project.arid" executable 2>/dev/null)" ] && PATH="$p:$PATH"
-    }
-    echo -n +
-done
-echo
+for p in $HOME/projects/*; do echo -n -; done >&2
+/bin/echo -en '\r' >&2
+PATH="$(PYTHONPATH=~/projects/aridity python3 -c 'import sys, os, aridity
+def g():
+    for project in sys.argv[1:]:
+        path = os.path.join(project, "project.arid")
+        if os.path.exists(path):
+            context = aridity.Context()
+            with aridity.Repl(context) as repl:
+                repl.printf("executable = false")
+                repl.printf(". %s", path)
+            if context.resolved("executable").value:
+                yield project
+        print("+", end = "", file = sys.stderr)
+print(os.pathsep.join(g()))' $HOME/projects/*):$PATH"
+echo >&2
 
 export JAVA_HOME=$HOME/opt/jdk1.8
 export MINICONDA_HOME=$HOME/opt/miniconda
