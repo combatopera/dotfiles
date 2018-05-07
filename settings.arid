@@ -9,6 +9,7 @@ tidalstudio
             windowName = Concern
     sendKey = \
     tidal
+        home = $/($(~) projects Tidal)
         channels
             8 port = 57121
             9 port = $(Concern port)
