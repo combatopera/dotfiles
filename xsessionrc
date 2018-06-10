@@ -1,3 +1,4 @@
 . $HOME/.bash_profile
 
 setxkbmap -option compose:lwin
+synclient TapButton1=0
