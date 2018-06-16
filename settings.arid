@@ -14,4 +14,5 @@ tidalstudio
             8 port = 57121
             9 port = $(Concern port)
 samples path = $/($(~) Music samples)
+reenc personalDevice = Samsung-Galaxy-S7
 . $(~)$(/).settings-private.arid
