@@ -10,6 +10,7 @@ alias cp='cp -i'
 
 alias hg='hg --color always'
 alias less='less -FR'
+alias ddg='w3m duckduckgo.com'
 
 function whereami {
     echo "$(dirname "$(readlink -f "$BASH_SOURCE")")"
