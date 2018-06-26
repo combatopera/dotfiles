@@ -10,9 +10,13 @@ alias cp='cp -i'
 
 alias hg='hg --color always'
 alias less='less -FR'
-alias ddg='w3m duckduckgo.com'
 
 function whereami {
     echo "$(dirname "$(readlink -f "$BASH_SOURCE")")"
 }
 . "$(whereami)/../r3-bin/git_completion"
+
+function ddg {
+    w3m "https://duckduckgo.com/?q=$(python3 -c "from sys import argv; from urllib.parse import quote_plus
+print(quote_plus(' '.join(argv[1:])))" "$@")"
+}
