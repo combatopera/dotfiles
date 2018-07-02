@@ -12,3 +12,4 @@ set expandtab
 autocmd BufNewFile,BufRead *.s set tabstop=10
 autocmd BufNewFile,BufRead *.s set noexpandtab
 colorscheme default
+set mouse=
