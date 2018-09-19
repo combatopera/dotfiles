@@ -1,6 +1,6 @@
 Concern port = 57122
 tidalstudio
-    synths
+    synths.disabled
         pym2149
             executable = $/($(~) projects pym2149 tidal2jack.py)
             windowName = pym2149
@@ -10,7 +10,7 @@ tidalstudio
     sendKey = \
     tidal
         home = $/($(~) projects Tidal)
-        channels
+        channels.disabled
             8 port = 57121
             9 port = $(Concern port)
 samples path = $/($(~) Music samples)
