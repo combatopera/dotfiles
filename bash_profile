@@ -23,6 +23,7 @@ echo >&2
 export JAVA_HOME=$HOME/opt/jdk1.8
 export MINICONDA_HOME=$HOME/opt/miniconda
 export MINICONDA3_HOME=$HOME/opt/miniconda3
+export GOPATH=$HOME/opt/go
 export EDITOR=vim
 export STEPWISE_ECLIPSE_WORKSPACE=$HOME/workspace
 
