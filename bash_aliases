@@ -20,3 +20,7 @@ function ddg {
     w3m "https://duckduckgo.com/?q=$(python3 -c "from sys import argv; from urllib.parse import quote_plus
 print(quote_plus(' '.join(argv[1:])))" "$@")"
 }
+
+function ? {
+    toilet --font big --gay $?
+}
