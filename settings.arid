@@ -15,4 +15,18 @@ tidalstudio
             9 port = $(Concern port)
 samples path = $/($(~) Music samples)
 reenc personalDevice = Samsung-Galaxy-S7
+laveradio
+    music_directory = /mnt/Seagate3/arc/Music/songs
+    cards
+        Intel
+            port = 6601
+            freq = 88.0
+        Live
+            port = 6602
+            freq = 89.5
+            tags += rock
+        Live1
+            port = 6603
+            freq = 90.2
+            tags += chip
 . $(~)$(/).settings-private.arid
