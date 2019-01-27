@@ -1,9 +1,10 @@
 Concern port = 57122
 tidalstudio
-    synths.disabled
+    synths
         pym2149
-            executable = $/($(~) projects pym2149 tidal2jack.py)
+            executable = $/($(~) projects pym2149 foxdot2jack.py)
             windowName = pym2149
+    synths.disabled
         Concern
             executable = $/($(~) projects Concern Concern)
             windowName = Concern
