@@ -4,10 +4,6 @@ tidalstudio
         pym2149
             executable = $/($(~) projects pym2149 foxdot2jack.py)
             windowName = pym2149
-    synths.disabled
-        Concern
-            executable = $/($(~) projects Concern Concern)
-            windowName = Concern
     sendKey = \
     tidal
         home = $/($(~) projects Tidal)
