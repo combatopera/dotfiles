@@ -14,6 +14,7 @@ tidalstudio
         channels.disabled
             8 port = 57121
             9 port = $(Concern port)
+    FoxDot home = $/($(~) projects FoxDot)
 samples path = $/($(~) Music samples)
 reenc personalDevice = Samsung-Galaxy-S7
 laveradio
