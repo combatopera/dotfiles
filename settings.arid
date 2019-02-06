@@ -1,10 +1,5 @@
 Concern
-    synths
-        pym2149
-            executable = $/($(~) projects pym2149 foxdot2jack.py)
-            windowName = pym2149
     sendKey = \
-    foxdot home = $/($(~) projects FoxDot)
 samples path = $/($(~) Music samples)
 reenc personalDevice = Samsung-Galaxy-S7
 laveradio
