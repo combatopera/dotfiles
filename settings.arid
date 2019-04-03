@@ -14,4 +14,5 @@ laveradio
             port = 6603
             freq = 90.2
             tags += chip
+organization = combatopera
 . $(~)$(/).settings-private.arid
