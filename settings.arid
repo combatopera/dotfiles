@@ -17,5 +17,7 @@ laveradio
 organization = combatopera
 pym2149
     chipchannels = 4
-Concern synths pym2149 executable = $/($(~) projects pym2149 foxdot2jack.py)
+Concern
+    synths pym2149 executable = $/($(~) projects pym2149 foxdot2jack.py)
+    foxdot home = $/($(~) projects FoxDot)
 . $(~)$(/).settings-private.arid
