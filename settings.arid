@@ -20,4 +20,5 @@ pym2149
 Concern
     synths pym2149 executable = $/($(~) projects pym2149 foxdot2jack.py)
     foxdot home = $/($(~) projects FoxDot)
+    consumerName = pym2149
 . $(~)$(/).settings-private.arid
