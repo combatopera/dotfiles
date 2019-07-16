@@ -17,7 +17,7 @@ def g():
                 color = "green"
                 attrs = ["bold"]
         termcolor.cprint("+", end = "", file = sys.stderr, color = color, attrs = attrs)
-print(os.pathsep.join(g()))' $HOME/projects/*):$PATH"
+print(os.pathsep.join(g()))' $HOME/projects/*):$HOME/.local/bin:$PATH"
 echo >&2
 
 export JAVA_HOME=$HOME/opt/jdk1.8
