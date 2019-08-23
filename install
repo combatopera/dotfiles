@@ -15,9 +15,9 @@ find -type f | while read f; do
 
     path=~/".$f"
 
-    [[ -e "$path" ]] && {
+    [[ -e "$path" || ! -e "$(dirname "$path")" ]] && {
         echo -n 'Skip: '
-        ls --color "$path"
+        ls --color "$path" || true
         continue
     } >&2
 
