@@ -1,3 +1,4 @@
 /.pb/
-/.idea/codeStyles/
+.idea/codeStyles/
 *.swp
+/var/
