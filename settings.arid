@@ -17,7 +17,5 @@ laveradio
 organization = combatopera
 pym2149
     chipchannels = 4
-Concern
-    foxdot home = $/($(~) projects FoxDot)
-    consumerName = pym2149
+Concern consumerName = pym2149
 . $(~)$(/).settings-private.arid
