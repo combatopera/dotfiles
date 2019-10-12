@@ -15,7 +15,5 @@ laveradio
             freq = 90.2
             tags += chip
 organization = combatopera
-pym2149
-    chipchannels = 4
 Concern consumerName = pym2149
 . $(~)$(/).settings-private.arid
