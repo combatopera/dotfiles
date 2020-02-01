@@ -1,5 +1,6 @@
 . $HOME/.profile
 
+# XXX: Is ~/.local/bin still needed on any platform?
 PATH="$HOME/opt/venv3/bin:$HOME/opt/venv2/bin:$HOME/.local/bin:$PATH"
 
 export JAVA_HOME=$HOME/opt/jdk1.8
