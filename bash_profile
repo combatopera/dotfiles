@@ -5,8 +5,6 @@
 PATH="$HOME/.local/bin:$PATH:$HOME/opt/venv3/bin:$HOME/opt/venv2/bin"
 
 export JAVA_HOME=$HOME/opt/jdk1.8
-export MINICONDA_HOME=$HOME/opt/miniconda
-export MINICONDA3_HOME=$HOME/opt/miniconda3
 export GOPATH=$HOME/opt/go
 export EDITOR=vim
 export STEPWISE_ECLIPSE_WORKSPACE=$HOME/workspace
