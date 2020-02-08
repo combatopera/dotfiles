@@ -1,7 +1,8 @@
 . $HOME/.profile
 
 # XXX: Is ~/.local/bin still needed on any platform?
-PATH="$HOME/opt/venv3/bin:$HOME/opt/venv2/bin:$HOME/.local/bin:$PATH"
+# Put venvs last so we don't override system python:
+PATH="$HOME/.local/bin:$PATH:$HOME/opt/venv3/bin:$HOME/opt/venv2/bin"
 
 export JAVA_HOME=$HOME/opt/jdk1.8
 export MINICONDA_HOME=$HOME/opt/miniconda
