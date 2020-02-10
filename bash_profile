@@ -1,28 +1,10 @@
 . $HOME/.profile
 
-for p in $HOME/projects/*; do echo -n -; done >&2
-/bin/echo -en '\r' >&2
-PATH="$(PYTHONPATH=~/projects/aridity python3 -c 'import sys, os, aridity, termcolor
-def g():
-    for project in sys.argv[1:]:
-        color = attrs = None
-        path = os.path.join(project, "project.arid")
-        if os.path.exists(path):
-            context = aridity.Context()
-            with aridity.Repl(context) as repl:
-                repl.printf("executable = false")
-                repl.printf(". %s", path)
-            if context.resolved("executable").value:
-                yield project
-                color = "green"
-                attrs = ["bold"]
-        termcolor.cprint("+", end = "", file = sys.stderr, color = color, attrs = attrs)
-print(os.pathsep.join(g()))' $HOME/projects/*):$HOME/.local/bin:$PATH"
-echo >&2
+# XXX: Is ~/.local/bin still needed on any platform?
+# Put venvs last so we don't override system python:
+PATH="$HOME/.local/bin:$PATH:$HOME/opt/venv3/bin:$HOME/opt/venv2/bin"
 
 export JAVA_HOME=$HOME/opt/jdk1.8
-export MINICONDA_HOME=$HOME/opt/miniconda
-export MINICONDA3_HOME=$HOME/opt/miniconda3
 export GOPATH=$HOME/opt/go
 export EDITOR=vim
 export STEPWISE_ECLIPSE_WORKSPACE=$HOME/workspace

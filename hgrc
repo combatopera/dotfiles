@@ -6,7 +6,7 @@ color =
 progress = 
 
 [hooks]
-commit = hgcommit.py
+commit = hgcommit
 
 [alias]
 revertt = revert --no-backup
