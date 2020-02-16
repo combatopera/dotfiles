@@ -21,3 +21,7 @@ print(quote_plus(' '.join(argv[1:])))" "$@")"
 function ? {
     toilet --font big --gay $?
 }
+
+function aws {
+    "$(which aws)" --profile "$INTERACTIVE_AWS_PROFILE" "$@"
+}
