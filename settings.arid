@@ -19,4 +19,6 @@ Concern consumerName = pym2149
 stmulti
     repohost = lave.local
     netremotename = lave
+    reponame = Seagate3
+    repomount = /mnt/$(reponame)
 . $(~)$(/).settings-private.arid
