@@ -16,4 +16,7 @@ laveradio
             tags += chip
 organization = combatopera
 Concern consumerName = pym2149
+stmulti
+    repohost = lave.local
+    netremotename = lave
 . $(~)$(/).settings-private.arid
