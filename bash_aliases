@@ -25,3 +25,7 @@ function ? {
 function aws {
     "$(which aws)" --profile "$INTERACTIVE_AWS_PROFILE" "$@"
 }
+
+function sops {
+    AWS_PROFILE="$INTERACTIVE_AWS_PROFILE" "$(which sops)" "$@"
+}
