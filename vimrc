@@ -14,4 +14,6 @@ autocmd BufNewFile,BufRead *.s set noexpandtab
 autocmd FileType make setlocal noexpandtab
 colorscheme default
 set mouse=
-set nofixendofline
+if exists('+fixendofline')
+    set nofixendofline
+endif
