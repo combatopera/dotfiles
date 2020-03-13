@@ -1,7 +1,7 @@
 samples path = $/($(~) Music samples)
 reenc
     personalDevice = e4:e1:30:32:20:68
-    varpath = $/($(~) .reenc)
+    varpath = /mnt/Seagate3/arc/.reenc
 laveradio
     music_directory = /mnt/Seagate3/arc/Music/songs
     cards
