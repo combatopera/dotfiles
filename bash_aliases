@@ -29,3 +29,7 @@ function aws {
 function sops {
     AWS_PROFILE="$INTERACTIVE_AWS_PROFILE" "$(which sops)" "$@"
 }
+
+function terraform {
+    AWS_PROFILE="$INTERACTIVE_AWS_PROFILE" "$(which terraform)" "$@"
+}
