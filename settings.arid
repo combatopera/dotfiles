@@ -22,8 +22,10 @@ laveradio
             tags += chip
 organization = combatopera
 Concern consumerName = pym2149
+server hostname = lave.local
+buildbot port = 8010
 stmulti
-    repohost = lave.local
+    repohost = $(server hostname)
     netremotename = lave
     reponame = Seagate3
     repomount = /mnt/$(reponame)
