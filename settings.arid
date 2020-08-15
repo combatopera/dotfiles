@@ -30,6 +30,7 @@ buildbot
         Hu
         Jin
     repo = /mnt/Seagate3/arc/projects
+    pb port = 9989
 stmulti
     repohost = $(server hostname)
     netremotename = lave
