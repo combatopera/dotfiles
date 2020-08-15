@@ -23,7 +23,12 @@ laveradio
 organization = combatopera
 Concern consumerName = pym2149
 server hostname = lave.local
-buildbot port = 8010
+buildbot
+    port = 8010
+    workers +=
+        Cheung
+        Hu
+        Jin
 stmulti
     repohost = $(server hostname)
     netremotename = lave
