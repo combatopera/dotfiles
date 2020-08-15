@@ -29,6 +29,7 @@ buildbot
         Cheung
         Hu
         Jin
+    repo = /mnt/Seagate3/arc/projects
 stmulti
     repohost = $(server hostname)
     netremotename = lave
