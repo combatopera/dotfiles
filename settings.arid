@@ -31,6 +31,7 @@ buildbot
         Jin
     repo = /mnt/Seagate3/arc/projects
     pb port = 9989
+    nightly hour = 4
 stmulti
     repohost = $(server hostname)
     netremotename = lave
