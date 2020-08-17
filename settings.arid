@@ -23,6 +23,7 @@ laveradio
 organization = combatopera
 Concern consumerName = pym2149
 server hostname = lave.local
+relay port = 11125
 buildbot
     port = 8010
     workers +=
