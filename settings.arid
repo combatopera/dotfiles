@@ -21,7 +21,9 @@ laveradio
             freq = 90.2
             tags += chip
 organization = combatopera
-Concern consumerName = pym2149
+Concern
+    consumerName = pym2149
+    pym2149 executable = lc2portaudio
 server hostname = lave.local
 vmtunnel
     port = 11125
