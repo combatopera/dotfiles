@@ -44,6 +44,6 @@ stmulti
     repomount = /mnt/$(reponame)
     hookmd5 = d92ab6d4b18b4bf64976d3bae7b32bd7
 projectsdir = $/($(~) projects)
-. $./(.misc.arid)
+. $./(.local.arid)
 runinaws . $./(.runinaws.arid)
 jslogin . $./(.jslogin.arid)
