@@ -46,4 +46,4 @@ stmulti
 projectsdir = $/($(~) projects)
 . $./(.misc.arid)
 runinaws . $./(.runinaws.arid)
-sso . $./(.sso.arid)
+jslogin . $./(.jslogin.arid)
