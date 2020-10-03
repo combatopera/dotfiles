@@ -46,4 +46,4 @@ stmulti
 projectsdir = $/($(~) projects)
 . $./(.local.arid)
 runinaws . $./(.runinaws.arid)
-jslogin . $./(.jslogin.arid)
+update-aws-credentials . $./(.update-aws-credentials.arid)
