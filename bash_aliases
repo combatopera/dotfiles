@@ -40,7 +40,7 @@ function preprompt {
             echo /usr/share/sounds/freedesktop/stereo/complete.oga
         else
             echo /usr/share/sounds/freedesktop/stereo/phone-incoming-call.oga
-        fi) &
+        fi) 2>/dev/null &
     )
     fi
 }
