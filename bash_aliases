@@ -30,18 +30,6 @@ function sops {
     AWS_PROFILE="$INTERACTIVE_AWS_PROFILE" "$(which sops)" "$@"
 }
 
-function preprompt {
-    local status=$? prevtime=$PROMPT_TIME
-    PROMPT_TIME=$(date +%s)
-    local duration=$((PROMPT_TIME - prevtime))
-    if [[ "$prevtime" && $duration -ge 10 ]]; then
-    (
-        paplay $(if [[ $status -eq 0 ]]; then
-            echo /usr/share/sounds/freedesktop/stereo/complete.oga
-        else
-            echo /usr/share/sounds/freedesktop/stereo/phone-incoming-call.oga
-        fi) 2>/dev/null &
-    )
-    fi
-}
-PROMPT_COMMAND=preprompt
+PS1="$SHLVL$PS1"
+
+taskding $$ &
