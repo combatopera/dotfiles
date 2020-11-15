@@ -37,6 +37,7 @@ buildbot
     repo = /mnt/Seagate3/arc/projects
     pb port = 9989
     nightly hour = 4
+    root = $/($(~) .buildbot)
 stmulti
     repohost = $(server hostname)
     netremotename = lave
