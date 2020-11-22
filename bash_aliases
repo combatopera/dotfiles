@@ -11,7 +11,7 @@ alias cp='cp -i'
 alias hg='hg --color always'
 alias less='less -FR'
 
-. "$(git-completion-path)"
+. "$(git-completion-path)" # FIXME: This is altogether too slow.
 
 function ddg {
     w3m "https://duckduckgo.com/?q=$(python3 -c "from sys import argv; from urllib.parse import quote_plus
