@@ -7,11 +7,6 @@ PATH="$HOME/.local/bin:$PATH:$HOME/opt/venv3/bin:$HOME/opt/venv2/bin"
 export JAVA_HOME=$HOME/opt/jdk1.8
 export GOPATH=$HOME/opt/go
 export EDITOR=vim
-export STEPWISE_ECLIPSE_WORKSPACE=$HOME/workspace
-
-#export http_proxy=http://localhost:3128/
-#export https_proxy=http://localhost:3128/
-#export ftp_proxy=http://localhost:3128/
 
 if [[ bash ]] 2>/dev/null; then
 [[ "$(pstree -s $$)" = *---cron---* ]] || {
