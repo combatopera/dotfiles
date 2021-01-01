@@ -3,7 +3,6 @@ PATH="$PATH:$HOME/opt/venv3/bin:$HOME/opt/venv2/bin" # Do not override system py
 . $HOME/.profile
 PATH="$HOME/.local/bin:$PATH" # Fix Debian bug.
 
-export JAVA_HOME=$HOME/opt/jdk1.8
 export GOPATH=$HOME/opt/go
 export EDITOR=vim
 
