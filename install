@@ -2,12 +2,12 @@
 
 set -e
 
-cd "$(dirname "$(readlink -f "$0")")"
+cd "$(dirname "$($(which greadlink || which readlink) -f "$0")")"
 
 prefix=~/
 relpwd="${PWD#$prefix}"
 
-find -type f | while read f; do
+$(which gfind || which find) -type f | while read f; do
 
     f="${f:2}"
 
@@ -17,12 +17,12 @@ find -type f | while read f; do
 
     [[ -e "$path" || ! -e "$(dirname "$path")" ]] && {
         echo -n 'Skip: '
-        ls --color "$path" || true
+        $(which gls || which ls) --color "$path" || true
         continue
     } >&2
 
     esc="$(echo "$f" | tr -cd / | sed s:/:../:g)"
 
-    ln -Tsfv "$esc$relpwd/$f" "$path"
+    $(which gln || which ln) -Tsfv "$esc$relpwd/$f" "$path"
 
 done
