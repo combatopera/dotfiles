@@ -19,7 +19,10 @@ print(quote_plus(' '.join(argv[1:])))" "$@")"
 }
 
 function ? {
-    toilet --font big --gay $?
+    local status=$? font
+    for font in big smblock; do
+        toilet --font $font --gay $status 2>/dev/null && break
+    done
 }
 
 function aws {
