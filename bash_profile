@@ -2,6 +2,7 @@ PATH="$PATH:$HOME/opt/venv3/bin:$HOME/opt/venv2/bin" # Do not override system py
 
 . $HOME/.profile
 PATH="$HOME/.local/bin:$PATH" # Fix Debian bug.
+for p in $HOME/Library/Python/*/bin; do PATH="$p:$PATH"; done
 
 export GOPATH=$HOME/opt/go
 export EDITOR=vim
