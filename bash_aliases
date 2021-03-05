@@ -33,6 +33,6 @@ function sops {
     AWS_PROFILE="$INTERACTIVE_AWS_PROFILE" "$(which sops)" "$@"
 }
 
-PS1="$(tput -S <<<$'rev\nsetaf 1')$SHLVL$(tput sgr0)$PS1"
+PS1="\[$(tput -S <<<$'rev\nsetaf 1')\]$SHLVL\[$(tput sgr0)\]$PS1"
 
 taskding $$ &
