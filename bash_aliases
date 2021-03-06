@@ -33,10 +33,6 @@ function sops {
     AWS_PROFILE="$INTERACTIVE_AWS_PROFILE" "$(which sops)" "$@"
 }
 
-function fx {
-    echo -n "\\[$(for x in "$@"; do echo "$x"; done | tput -S)\\]"
-}
-
-PS1="$(fx rev 'setaf 1')$SHLVL$(fx sgr0)$PS1"
+PS1="$(insertshlvl "$PS1")"
 
 taskding $$ &
