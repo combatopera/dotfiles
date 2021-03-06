@@ -11,7 +11,9 @@ alias cp='cp -i'
 alias hg='hg --color always'
 alias less='less -FR'
 
+# TODO: Combine these into one python invocation.
 . "$(git-completion-path)"
+PS1="$(insertshlvl "$PS1" $SHLVL)"
 
 function ddg {
     w3m "https://duckduckgo.com/?q=$(python3 -c "from sys import argv; from urllib.parse import quote_plus
@@ -32,7 +34,5 @@ function aws {
 function sops {
     AWS_PROFILE="$INTERACTIVE_AWS_PROFILE" "$(which sops)" "$@"
 }
-
-PS1="$(insertshlvl "$PS1")"
 
 taskding $$ &
