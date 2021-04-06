@@ -2,3 +2,4 @@
 
 setxkbmap -option compose:lwin
 synclient TapButton1=0
+watchdesk &
