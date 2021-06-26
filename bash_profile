@@ -1,4 +1,5 @@
-PATH="$PATH:$HOME/opt/venv3/bin:$HOME/opt/venv2/bin" # Do not override system python.
+export VENV2_PATH=$HOME/opt/venv2 VENV3_PATH=$HOME/opt/venv3
+PATH="$PATH:$VENV3_PATH/bin:$VENV2_PATH/bin" # Do not override system python.
 
 . $HOME/.profile
 for p in $HOME/Library/Python/*/bin; do PATH="$p:$PATH"; done
