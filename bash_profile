@@ -1,7 +1,5 @@
-export VENV2_PATH=$HOME/opt/venv2 VENV3_PATH=$HOME/opt/venv3
-for root in VENV3_PATH VENV2_PATH
-    do for p in ${!root}/*/bin; do PATH="$PATH:$p"; done # Do not override system python.
-done
+export USER_OPT=$HOME/opt
+for p in $USER_OPT/*/bin; do PATH="$PATH:$p"; done # Do not override system python.
 
 . $HOME/.profile
 for p in $HOME/Library/Python/*/bin; do PATH="$p:$PATH"; done
