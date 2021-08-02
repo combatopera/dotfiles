@@ -5,7 +5,7 @@ alias la='ls -A'
 alias lla='ls -lA'
 
 alias rm='rm -i'
-alias mv='mv -i'
+alias mv='mv -iv'
 alias cp='cp -i'
 
 alias hg='hg --color always'
