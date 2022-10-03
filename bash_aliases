@@ -11,6 +11,8 @@ alias cp='cp -i'
 alias hg='hg --color always'
 alias less='less -FR'
 
+. ~/.config/pyven/scripts
+
 eval "$(bashrc "$PS1" $SHLVL)"
 
 function ddg {
