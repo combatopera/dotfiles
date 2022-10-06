@@ -15,11 +15,6 @@ alias less='less -FR'
 
 eval "$(bashrc "$PS1" $SHLVL)"
 
-function ddg {
-    w3m "https://duckduckgo.com/?q=$(python3 -c "from sys import argv; from urllib.parse import quote_plus
-print(quote_plus(' '.join(argv[1:])))" "$@")"
-}
-
 function ? {
     local status=$? font
     for font in big smblock; do
