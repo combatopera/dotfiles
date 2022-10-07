@@ -1,5 +1,6 @@
 export USER_OPT=$HOME/opt
 for p in $USER_OPT/*/bin; do PATH="$PATH:$p"; done # Do not override system python.
+export BASH_ENV=$HOME/.config/pyven/scripts
 
 . $HOME/.profile
 for p in $HOME/Library/Python/*/bin; do PATH="$p:$PATH"; done
