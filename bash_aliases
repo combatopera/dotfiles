@@ -11,7 +11,7 @@ alias cp='cp -i'
 alias hg='hg --color always'
 alias less='less -FR'
 
-. ~/.config/pyven/scripts
+. "$BASH_ENV"
 
 eval "$(bashrc "$PS1" $SHLVL)"
 
