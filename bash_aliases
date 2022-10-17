@@ -11,8 +11,6 @@ alias cp='cp -i'
 alias hg='hg --color always'
 alias less='less -FR'
 
-. "$BASH_ENV"
-
 eval "$(bashrc "$PS1" $SHLVL)"
 
 function ? {
@@ -22,4 +20,4 @@ function ? {
     done
 }
 
-bg-taskding $$
+taskding $$ &
