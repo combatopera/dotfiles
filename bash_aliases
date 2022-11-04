@@ -11,7 +11,7 @@ alias cp='cp -i'
 alias hg='hg --color always'
 alias less='less -FR'
 
-eval "$(bashrc "$PS1" $SHLVL)"
+eval "$(~/.local/bin/bashrc "$PS1" $SHLVL)"
 
 function ? {
     local status=$? font
@@ -20,4 +20,4 @@ function ? {
     done
 }
 
-taskding $$ &
+~/.local/bin/taskding $$ &
