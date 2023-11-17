@@ -10,3 +10,7 @@ if [[ bash ]] 2>/dev/null && [[ "$(pstree -s $$)" != *---cron---* && $(($(date +
 else
     true
 fi
+
+export LG_WEBOS_TV_SDK_HOME=~/opt/webOS_TV_SDK
+export WEBOS_CLI_TV=$LG_WEBOS_TV_SDK_HOME/CLI/bin
+export PATH="$PATH:$WEBOS_CLI_TV"
