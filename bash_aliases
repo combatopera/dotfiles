@@ -9,7 +9,7 @@ alias mv='mv -iv'
 alias cp='cp -i'
 
 alias hg='hg --color always'
-alias less='less -FR'
+alias less='less -FRn'
 
 eval "$(~/.local/bin/bashrc "$PS1" $SHLVL)"
 
