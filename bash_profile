@@ -1,5 +1,4 @@
 . $HOME/.profile
-for p in $HOME/Library/Python/*/bin; do PATH="$p:$PATH"; done
 
 export GOPATH=$HOME/opt/go
 export EDITOR=vim
