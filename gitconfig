@@ -1,0 +1,6 @@
+[user]
+	name = Andrzej Cichocki
+[pager]
+	status = true
+[push]
+	default = upstream
