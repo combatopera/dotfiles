@@ -21,3 +21,6 @@ function ? {
 }
 
 ~/.local/bin/taskding $$ &
+
+HISTSIZE=10000
+HISTFILESIZE=$HISTSIZE
