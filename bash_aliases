@@ -10,6 +10,7 @@ alias cp='cp -i'
 
 alias hg='hg --color always'
 alias less='less -FRn'
+alias q='rlwrap -r q'
 
 eval "$(~/.local/bin/bashrc "$PS1" $SHLVL)"
 
