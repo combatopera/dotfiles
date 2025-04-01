@@ -3,4 +3,4 @@
 setxkbmap -option compose:lwin
 synclient TapButton1=0
 cronsh -c watchdesk &
-afternet barrier &
+cronsh -c 'afternet barrier' &
