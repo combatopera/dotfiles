@@ -15,3 +15,4 @@ export WEBOS_CLI_TV=$LG_WEBOS_TV_SDK_HOME/CLI/bin
 export QHOME=~/opt/q
 export PATH="$PATH:$WEBOS_CLI_TV:$QHOME/l64"
 : ${SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/gcr/ssh}
+[[ -v SSH_CLIENT ]] && export PINENTRY_USER_DATA=curses || true
