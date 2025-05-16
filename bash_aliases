@@ -25,3 +25,7 @@ function ? {
 
 HISTSIZE=10000
 HISTFILESIZE=$HISTSIZE
+
+function vim {
+    tabsmode "$@"
+}
