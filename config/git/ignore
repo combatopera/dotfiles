@@ -1,4 +1,7 @@
-/.pb/
 .idea/codeStyles/
+/.pb/
+/.project
+/.pydevproject
+/.settings/
 *.swp
 /var/
