@@ -1,2 +1,3 @@
 ServerAliveInterval 120
 HostKeyAlgorithms +ssh-dss
+ProxyCommand ncswitch %h %p
