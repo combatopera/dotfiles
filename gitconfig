@@ -4,3 +4,6 @@
 	status = true
 [push]
 	default = upstream
+[hook "exe-commit"]
+	event = pre-commit
+	command = true
