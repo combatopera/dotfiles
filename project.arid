@@ -1,2 +1,3 @@
+. $pyres(pyven base.arid)
 proprietary = true
 pypi participant = false
